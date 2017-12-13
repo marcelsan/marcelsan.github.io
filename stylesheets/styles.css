@@ -23,6 +23,31 @@ h1 {
   font-size:28px;
 }
 
+div.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    margin-bottom: 35px;
+}
+
+div.menu li {
+    float: left;
+}
+
+div.menu  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+div.menu li a:hover {
+    background-color: #111111;
+}
+
 h2 {
   color:#393939;
 }
@@ -187,7 +212,6 @@ section {
 
 section.projects div{
   overflow: hidden;
-  margin: 20px 0px;
 }
 
 section.projects img {
