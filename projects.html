@@ -64,7 +64,7 @@
 
           <div>
             <h3>Breast Cancer Analysis</h3>
-            <p>We used machine learning algorithms to build a classification model which learns carcinogenic individual's patterns and predicts if a new individual has or no cancer. The analyzed dataset contains about 2000 lines with 6 different features extracted from breast image exams and the target which indicates if the individual was diagnosed with cancer or not. This project was developed in Python using Keras, Pandas and scikit-learn libraries.</p>
+            <p>We used Neural Networks and Gradient Boosting Trees to build models capable to classify individual breast cancer diagnostic based on features extracted from image exams. This project was developed to a Neural Networks course in the Federal University of Pernambuco. We developed that by using Python language and Keras, xgboost, Pandas and scikit-learn libraries.</p>
             <a target="_blank" href="https://github.com/wmr1/breast-cancer-analysis">Project Link</a> <br /><br />
           </div>
 
@@ -79,7 +79,7 @@
           <div>
             <h3>Human Skin Detection Using Bayesian Approaches</h3>
             <p>
-              We developed a human skin detection algorithm using Bayesian approaches and a face tracking algorithm. We have prior histograms which store skin and not skin pixels, as the user uses the application we update this histogram by using the mask which gives the skin (positive histogram) and not skin (negative histogram) pixels. This mask is built using the face tracker output and gives us many regions which can be used in order to populate the positive and negative histogram. The developed algorithm is able to detect human skin even with changes in environmental light conditions.
+              We have prior histograms to classify skin and not skin pixels. The histograms were built from a YCbCr images dataset of manually classified pixels. Those offline histograms are stored in a LUT which provides very fast pixel classification. As the user uses the application we also can enable the histogram update by using the face tracker regions. Hence, the algorithm is able to detect human skin even with changes in environmental light conditions. Our algorithm works well in many different conditions and is very fast, capable of running in many different smartphones.
             </p>
             <a target="_blank" href="https://youtu.be/mtShFY-pO14">Video Link</a> <br /><br />
           </div>
@@ -87,7 +87,7 @@
           <div>
             <h3>Path Tracer</h3>
             <img src="img/path.png" alt="path">
-            <p>This project was fully written in C++11 late 2015 to Graphics Computer course at CIn UFPE. It is my first implementation of the Path Tracing global illumination algorithm. The features includes: the scene loader (the user can set the camera position, the objects positions and materials, lights etc), the .OBJ loader, anti-aliasing, recursive refraction using Snell's Law, recursive reflection, reflectance and transmittance following Fresnel's equations. </p>
+            <p>This project was fully written in C++11 late 2015 to Computer Graphics course. The main features includes: global illumination via unbiased Monte Carlo path tracing, the scene loader (the user can set the camera position, the objects positions and materials, lights etc), the .OBJ loader, anti-aliasing via super-sampling, recursive refraction using Snell's Law, reflectance and transmittance following Fresnel's equations.</p>
             <a target="_blank" href="https://github.com/marcelsan/PathTracer">Project Link</a>
           </div><br />
           
@@ -96,7 +96,7 @@
           <h2><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other Projects</h2>
           <div>
             <h3>Ray Trace Scene Viewer</h3>
-            <p>This project  implements a basic Ray Tracer algorithm. It was fully written in modern C++11 late 2014 to Graphics Processing course at CIn UFPE. The main feature of this viewer is load and process OBJ files applying texture and Phong lighting mode to each one. The user also can change the position of each object and light in scene. Every Ray Tracing computation is parallel (by using std::threads) it makes the rendering process faster. </p>
+            <p>This project implements a basic Ray Tracer algorithm. It was fully written in modern C++11 late 2014 to Graphics Processing course at CIn UFPE. The main feature of this viewer is load and process OBJ files applying texture and Phong lighting mode to each one. The user also can change the position of each object and light in scene. Every Ray Tracing computation is parallel (by using std::threads) it makes the rendering process faster. </p>
 
             <h3>Fluid Engine</h3>
             <p>I have a small contribuition on the open source project <a target="_blank" href="https://github.com/doyubkim/fluid-engine-dev">Fluid Engine</a></p>
