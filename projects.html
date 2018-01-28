@@ -16,7 +16,7 @@
     <div class="wrapper">
       <header>
         <h1>Marcel Santana</h1>
-        <img src="img/eu.png" alt="Marcel Santana"><br />
+        <img src="img/pp.jpeg" alt="Marcel Santana" width="75%"><br />
         <p>
           <b>Address</b> <br />
           Av. Jornalista Anibal Fernandes, s/n
@@ -61,8 +61,22 @@
           <hr /> 
 
           <h2><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Major Projects</h2>
-
+		   
+		  <div>
+            <h3>Path Tracer Denoiser</h3>
+            <p>
+				I am developing a machine learning system to deal with Monte Carlo noise present in Path Traced images (images rendered using the Path Tracing algorithm). Path tracing can deliver beautiful images. However, it needs thousands of samples per pixel to generate good results. It makes the rendering process take a long time. This delay is prohibitive to real-time applications (such as games) and increases the cost to the movie industry. On the other hand, using low samples per pixel results in a very noisy image. An approach to deal with this tradeoff is rendering a low sampled image and so apply post-processing techniques to get a better result. However, the traditional post-processing techniques are either limited or need a very trick parameters tuning. Thus, the purpose of this project is to build a Convolution Neural Network which delivers a filter able to generate noise-free images from noisy ones.
+				This project is based on the recent released works:
+				[1] N. K. Kalantari, S. Bako, and P. Sen, “A machine learning approach for filtering monte carlo noise,” TOG ACM Trans. Graph. ACM Transactions on Graphics, vol. 34, no. 4, 2015.
+				[2] S. Bako, T. Vogels, B. McWilliams, M. Meyer, J. Novak, A. Harvill, P. Sen, T. DeRose, F. Rousselle, "Kernel-Predicting Convolutional Networks for Denoising Monte Carlo Renderings," ACM Transactions on Graphics, Vol. 36, No. 4, July 2017, (Proceedings of ACM SIGGRAPH 2017)
+				[3] Chakravarty R. A. Chaitanya, Anton Kaplanyan, Christoph Schied, Marco Salvi, Aaron Lefohn, Derek Nowrouzezahrai, and Timo Aila. 2017. Interactive Reconstruction of Noisy Monte Carlo Image Sequences using a Recurrent Autoencoder. ACM Trans. Graph. (Proc. SIGGRAPH) (2017)
+				<a target="_blank"  href="img/pt_denoised.jpeg"><img src="img/pt_denoised.jpeg" alt="denoise"></a>	
+			</p>
+            <br /><br />
+          </div> 
+		   
           <div>
+			<br />
             <h3>Breast Cancer Analysis</h3>
             <p>We used Neural Networks and Gradient Boosting Trees to build models capable to classify individual breast cancer diagnostic based on features extracted from image exams. This project was developed to a Neural Networks course in the Federal University of Pernambuco. We developed that by using Python language and Keras, xgboost, Pandas and scikit-learn libraries.</p>
             <a target="_blank" href="https://github.com/wmr1/breast-cancer-analysis">Project Link</a> <br /><br />
@@ -96,10 +110,13 @@
           <h2><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other Projects</h2>
           <div>
             <h3>Ray Trace Scene Viewer</h3>
-            <p>This project implements a basic Ray Tracer algorithm. It was fully written in modern C++11 late 2014 to Graphics Processing course at CIn UFPE. The main feature of this viewer is load and process OBJ files applying texture and Phong lighting mode to each one. The user also can change the position of each object and light in scene. Every Ray Tracing computation is parallel (by using std::threads) it makes the rendering process faster. </p>
-
+            <p>This project  implements a basic Ray Tracer algorithm. It was fully written in modern C++11 late 2014 to Graphics Processing course at CIn UFPE. The main feature of this viewer is load and process OBJ files applying texture and Phong lighting mode to each one. The user also can change the position of each object and light in scene. Every Ray Tracing computation is parallel (by using std::threads) it makes the rendering process faster. </p>
+			
+			      <h3>keras.io</h3>
+            <p>I have a small contribuitions on the keras.io slack.</p>
+			
             <h3>Fluid Engine</h3>
-            <p>I have a small contribuition on the open source project <a target="_blank" href="https://github.com/doyubkim/fluid-engine-dev">Fluid Engine</a></p>
+            <p>I have a small contribuition on the open-source project <a target="_blank" href="https://github.com/doyubkim/fluid-engine-dev">Fluid Engine</a></p>
           </div>
         </section>
 
