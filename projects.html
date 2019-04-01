@@ -1,107 +1,113 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Marcel Santana</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Marcel Santana</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/github-light.css">
+  <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Marcel Santana</h1>
-        <img src="img/pp.jpeg" alt="Marcel Santana" width="75%"><br />
-        <p>
-          <b>Address</b> <br />
-          Av. Jornalista Anibal Fernandes, s/n
-          Cidade Universitária (Campus Recife) <br />
-          ZIP Code: 50740-560 <br />
-          Recife/PE - Brazil <br />
-          <b>Contact</b><br />
-          e-mail: mss8@cin.ufpe.br
-        </p> 
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Marcel Santana</h1>
+      <img src="img/pp.jpeg" alt="Marcel Santana" width="75%"><br />
+      <p>
+        <b>Address</b> <br />
+        Av. Jornalista Anibal Fernandes, s/n
+        Cidade Universitária (Campus Recife) <br />
+        ZIP Code: 50740-560 <br />
+        Recife/PE - Brazil <br />
+        <b>Contact</b><br />
+        e-mail: mss8@cin.ufpe.br
+      </p> 
 
-        <p class="view"><a href="https://github.com/marcelsan">View My GitHub Profile</a></p>
+      <p class="view"><a href="https://github.com/marcelsan">View My GitHub Profile</a></p>
 
-      </header>
-      <section>
-        <div class="menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-          </ul>
+    </header>
+    <section>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+        </ul>
+      </div>
+
+      <h2><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>R&D Projects</h2>
+
+      <section class="projects">
+        <div>
+          <h3>OKI Brasil</h3>
+          <p>Development of biometric and image quality measurement systems using machine learning and computer vision techniques with Keras, OpenCV, and scikit-learn libraries.</p>
         </div>
+        <div>
+          <h3>LG Eletronics</h3>
+          <p>Developed a data intensive rendering system to iPad device using C++ and Objective-C.</p>
+        </div>
+        <div>
+          <h3>Simplifique GP</h3>
+          <p>Developed a image enhancement system to Android using Computer Vision and Image Processing techniques, OpenCV, C++, and Android NDK and JNI.</p>
+        </div><br />
 
-        <h2><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>R&D Projects</h2>
+        <hr /> 
 
-        <section class="projects">
-          <div>
-            <h3>OKI Brasil</h3>
-            <p>Development of biometric and image quality measurement systems using machine learning and computer vision techniques with Keras, OpenCV, and scikit-learn libraries.</p>
-          </div>
-          <div>
-            <h3>LG Eletronics</h3>
-            <p>Developed a data intensive rendering system to iPad device using C++ and Objective-C.</p>
-          </div>
-          <div>
-            <h3>Simplifique GP</h3>
-            <p>Developed a image enhancement system to Android using Computer Vision and Image Processing techniques, OpenCV, C++, and Android NDK and JNI.</p>
-          </div><br />
+        <h2><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Major Projects</h2>
 
-          <hr /> 
+        <div>
+          <h3>Path Tracer</h3>
+          <p><a target="_blank"  href="https://github.com/marcelsan/pt">Project link</a></p>
+        </div>
+        <div>
+          <h3>Deep Shading: Convolutional Neural Networks for Screen-Space Shading</h3>
+          <p>The project is based on Nalbach et al. 2017 paper. <a target="_blank"  href="https://github.com/marcelsan/DeepShading">Project link</a></p>
+        </div>
+        <div>
+          <h3>Semantic Segmentation Architectures</h3>
+          <p>Implementation of Semantic Segmentation Deep Learning architectures. <a target="_blank"  href="https://github.com/marcelsan/semantic-segmentation">Project link</a></p>
+        </div><br />
 
-          <h2><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Major Projects</h2>
-		   
-		  <div>
-            <h3>Path Tracer Denoiser</h3>
-            <p>
-				 Path tracing can deliver beautiful images. However, it needs thousands of samples per pixel to generate good results. It makes the rendering process take a long time. This delay is prohibitive to real-time applications (such as games) and increases the cost to the movie industry. On the other hand, using low samples per pixel results in a very noisy image. An approach to deal with this tradeoff is rendering a low sampled image and so apply post-processing techniques to get a better result. However, the traditional post-processing techniques are either limited or need a very trick parameters tuning. Thus, the purpose of this project is to build a Convolution Neural Network which delivers a filter able to generate noise-free images from noisy ones.
-				<a target="_blank"  href="img/pt_denoised.jpeg"><img src="img/pt_denoised.jpeg" alt="denoise"></a>	
-			</p>
-            <br /><br />
-          </div> 
-		   
-          <div>
-            <h3>Human Skin Detection Using Bayesian Approaches</h3>
-            <p>
-              We have prior histograms to classify skin and not skin pixels. The histograms were built from a YCbCr images dataset of manually classified pixels. Those offline histograms are stored in a LUT which provides very fast pixel classification using a Bayesian appraoch. The algorithm is able to detect human skin even with changes in environmental light conditions. Our algorithm works well in many different conditions and is very fast, capable of running in many different smartphones.
-            </p>
-            <img src="img/skin1.png" alt=""> <br />
-            <img src="img/skin2.png" alt="">
-            <br /><br />
-            <a target="_blank" href="https://youtu.be/mtShFY-pO14">Video Link</a> <br /><br />
-          </div>
+        <div>
+          <h3>Path Tracer Denoiser</h3>
+          <p>
+           Path tracing can deliver beautiful images. However, it needs thousands of samples per pixel to generate good results. It makes the rendering process take a long time. This delay is prohibitive to real-time applications (such as games) and increases the cost to the movie industry. On the other hand, using low samples per pixel results in a very noisy image. An approach to deal with this tradeoff is rendering a low sampled image and so apply post-processing techniques to get a better result. However, the traditional post-processing techniques are either limited or need a very trick parameters tuning. Thus, the purpose of this project is to build a Convolution Neural Network which delivers a filter able to generate noise-free images from noisy ones.
+           <a target="_blank"  href="img/pt_denoised.jpeg"><img src="img/pt_denoised.jpeg" alt="denoise"></a>	
+         </p>
+         <br /><br />
+       </div> <br />
 
-          <div>
-            <h3>Path Tracer</h3>
-            <img src="img/path.png" alt="path">
-            <p>This project was fully written in C++11 late 2015 to Computer Graphics course. The main features includes: global illumination via unbiased Monte Carlo path tracing, the scene loader (the user can set the camera position, the objects positions and materials, lights etc), the .OBJ loader, anti-aliasing via super-sampling, recursive refraction using Snell's Law, reflectance and transmittance following Fresnel's equations.</p>
-            <a target="_blank" href="https://github.com/marcelsan/PathTracer">Project Link</a>
-          </div><br />
-          
-          <hr />
+       <div>
+        <h3>Human Skin Detection Using Bayesian Approaches</h3>
+        <p>
+          We have prior histograms to classify skin and not skin pixels. The histograms were built from a YCbCr images dataset of manually classified pixels. Those offline histograms are stored in a LUT which provides very fast pixel classification using a Bayesian appraoch. The algorithm is able to detect human skin even with changes in environmental light conditions. Our algorithm works well in many different conditions and is very fast, capable of running in many different smartphones.
+        </p>
+        <img src="img/skin1.png" alt=""> <br />
+        <img src="img/skin2.png" alt="">
+        <br /><br />
+        <a target="_blank" href="https://youtu.be/mtShFY-pO14">Video Link</a> <br /><br />
+      </div>
 
-          <h2><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other Projects</h2>
-          <div>
-            <h3>Ray Trace Scene Viewer</h3>
-            <p>This project  implements a basic Ray Tracer algorithm. It was fully written in modern C++11 late 2014 to Graphics Processing course at CIn UFPE. The main feature of this viewer is load and process OBJ files applying texture and Phong lighting mode to each one. The user also can change the position of each object and light in scene. Every Ray Tracing computation is parallel (by using std::threads) it makes the rendering process faster. </p>
-			
-            <h3>Fluid Engine</h3>
-            <p>I have a small contribuition on the open-source project <a target="_blank" href="https://github.com/doyubkim/fluid-engine-dev">Fluid Engine</a></p>
-          </div>
-        </section>
+      <hr />
 
-      </section>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+      <h2><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other Projects</h2>
+      <div>
+        <h3>Ray Trace Scene Viewer</h3>
+        <p>This project  implements a basic Ray Tracer algorithm. It was fully written in modern C++11 late 2014 to Graphics Processing course at CIn UFPE. The main feature of this viewer is load and process OBJ files applying texture and Phong lighting mode to each one. The user also can change the position of each object and light in scene. Every Ray Tracing computation is parallel (by using std::threads) it makes the rendering process faster. </p>
+
+        <h3>Fluid Engine</h3>
+        <p>I have a small contribuition on the open-source project <a target="_blank" href="https://github.com/doyubkim/fluid-engine-dev">Fluid Engine</a></p>
+      </div>
+    </section>
+
+  </section>
+</div>
+<script src="javascripts/scale.fix.js"></script>
+
+</body>
 </html>
