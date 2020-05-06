@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    Single Image HDR Reconstruction Using a CNN with Masked Features and Perceptual Loss
+  </title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="./files/style.css">
+  <link rel="stylesheet" href="./files/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./files/katex.min.css">
+  <link rel="stylesheet" href="./files/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": {
+  scale: 100
+}
+});
+</script><script type="text/javascript" src="./files/MathJax.js"></script></head>
+
+
+<!-- MathJax Script -->
+
+
+
+<body>
+  <div class="page-content">
+    <div class="wrapper">
+
+      <article class="post">
+
+        <header class="post-header">
+          <!-- Paper title -->
+          <h1 class="post-title">Single Image HDR Reconstruction Using a CNN with Masked Featuresand Perceptual Loss</h1>
+
+          <!-- Authors -->
+          <ul class="authors">
+
+            <li>
+              <a href="https://marcelsan.github.io/">Marcel Santana Santos</a>,
+              Centro de Informática, Universidade Federal de Pernambuco
+            </li>
+
+            <li>
+              <a href="https://www.cin.ufpe.br/~tir/">Tsang Ing Ren</a>,
+              Centro de Informática, Universidade Federal de Pernambuco
+            </li>
+
+            <li>
+             <a href="http://faculty.cs.tamu.edu/nimak/">Nima Khademi Kalantari</a>,
+             Texas A&M University
+           </li>
+         </ul>
+
+         <!-- Journal/conference title -->
+         <p>In 
+          <i>ACM Transactions on Graphics</i><i> (To be presented at SIGGRAPH)</i>, 2020<br>
+        </p>
+
+        <!-- Teaser figure-->
+        <figure>
+          <a href="./files/teaser.png"><img src="./files/teaser.png" class="teaser"></a>
+          <p style="font-size:13px" class="justified">We propose a novel deep learning system for single image HDR reconstruction by synthesizing visually pleasing details in the saturated areas. We introduce a new feature masking approach that reduces the contribution of the features computed on the saturated areas, to mitigate halo and checkerboard artifacts. To synthesize visually pleasing textures in the saturated regions, we adapt the VGG-based perceptual loss function to the HDR reconstruction application. Furthermore, to effectively train our network on limited HDR training data, we propose to pre-train the network on inpainting task. Our method can reconstruct regions with high luminance, such as the bright highlights of the windows (red inset), and generate visually pleasing textures (green insert). See Figure 7 for comparison against several other approaches. All images have been gamma corrected for display purposes.</p>
+        </figure>
+      </header>
+
+      <div class="post-content">
+        <!-- Abstract -->
+        <h1>Abstract</h1>
+        <p class="justified">Digital cameras can only capture a limited range of real-world scenes' luminance, producing images with saturated pixels. Existing single image high dynamic range (HDR) reconstruction methods attempt to expand the range of luminance, but are not able to hallucinate plausible textures, producing results with artifacts in the saturated areas. In this paper, we present a novel learning-based approach to reconstruct an HDR image by recovering the saturated pixels of an input LDR image in a visually pleasing way. Previous deep learning-based methods apply the same convolutional filters on well-exposed and saturated pixels, creating ambiguity during training and leading to checkerboard and halo artifacts. To overcome this problem, we propose a feature masking mechanism that reduces the contribution of the features from the saturated areas. Moreover, we adapt the VGG-based perceptual loss function to our application to be able to synthesize visually pleasing textures. Since the number of HDR images for training is limited, we propose to train our system in two stages. Specifically, we first train our system on a large number of images for image inpainting task and then fine-tune it on HDR reconstruction. Since most of the HDR examples contain smooth regions that are simple to reconstruct, we propose a sampling strategy to select challenging training patches during the HDR fine-tuning stage. We demonstrate through experimental results that our approach can reconstruct visually pleasing HDR results, better than the current state of the art on a wide range of scenes.</p>
+
+        <!-- Download links -->
+
+
+        <h1>Downloads</h1>
+        <p>
+        </p><h3>Publication</h3>
+        <ul class="fa-ul">
+
+          <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+            <a href="./files/SIGGRAPH2020Paper.pdf">Paper, PDF (152.8MB)</a>
+          </li>
+
+          <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+            <a href="./files/SIGGRAPH2020Paper-lowres.pdf">Paper (Low resolution), PDF (18.2MB)</a>
+          </li>
+        </ul>
+
+        <h3>Supplementals</h3>
+        <ul class="fa-ul">
+
+          <li><span class="fa-li"><i class="far fa-file-archive"></i></span>
+            <a href="./files/Supplementary_Materials.zip">Supplementary material, ZIP (73.6MB)</a>
+          </li>
+
+
+          <li><span class="fa-li"><i class="far fa-eye"></i></span>
+            <a href="#">Source code (comming soon!)</a>
+          </li>
+
+        </ul>
+        
+        <p></p>
+
+
+        <!-- Video embedding -->
+
+
+        <!-- Thanks -->
+
+        <h1>Acknowledgments</h1>
+        <p class="justified">
+          We thank the reviewers for their constructive comments. M. Santos is funded by the Brazilian agency CNPQ grant 161268/2018-8. T. Ren is partially supported by FACEPE grant APQ-0192- 1.03/14. N. Kalantari is in part funded by a TAMU T3 grant 246451. The website template was borrowed from <a href="https://joeylitalien.github.io/">Joey Litalien</a>.
+        </p>
+
+
+        <!-- BibTeX citation -->
+
+        <h1>Cite</h1>
+        <blockquote class="justified">
+
+          <a href="https://marcelsan.github.io/">Marcel Santana Santos</a>,
+
+          <a href="https://www.cin.ufpe.br/~tir/">Tsang Ing Ren</a>
+
+          and 
+
+          <a href="http://faculty.cs.tamu.edu/nimak/">Nima Khademi Kalantari</a>.
+
+          Single Image HDR Reconstruction Using a CNN with Masked Features and Perceptual Loss. <i>ACM Transactions on Graphics</i>, 39, 4, Article 1 (July 2020).
+        </blockquote>
+
+<pre><code>@article{Marcel:2020:LDRHDR,
+author = {Santos, Marcel Santana and Ren, Tsang Ing and Kalantari, Nima Khademi},
+title = {Single Image HDR Reconstruction Using a CNN with Masked Features and Perceptual Loss},
+journal = {ACM Transactions on Graphics},
+volume = {39},
+number = {4},
+year = {2020},
+month = {7},
+doi = {10.1145/3386569.3392403}
+}
+</code></pre>
+
+
+
+     <!-- Other content -->
+
+
+   </div>
+
+ </article>
+
+</div>
+</div>
+
+
+</body></html>
